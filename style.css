@@ -1,36 +1,62 @@
+/* for development
+box-sizing: border-box;
+border: 5px solid pink;
+outline: 2px solid red;
+*/
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
 body {
-  margin: 0px;
-  padding: 20px;
-  background-color: rgb(132, 131, 142);
-  border: solid rgb(23, 58, 92) 20px;
-}
-
-.linkgithub {
-  display: flex;
-  width: 100%;
-}
-
-.titlegithub {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  margin: auto;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, orange, white);
+}
+
+.main-title {
+  text-align: center;
+  background-image: linear-gradient(to bottom, orange, white);
+  border-color: black;
+  border: solid;
+  border-width: 3px;
+  border-radius: 15px;
+}
+
+.header {
+}
+.navigation {
+  display: flex;
+  justify-content: end;
+}
+
+.navigation-link {
+  padding: 6px;
+  background-image: linear-gradient(to bottom, orange, white);
+  border: solid;
+  border-width: 1px;
+  border-radius: 15px;
   color: black;
-  background-color: white;
-  border-radius: 15%;
 }
 
-.Linkcodepen {
+.personal-picture {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
 }
 
-.linkedin {
+.interest {
   display: flex;
+  flex-direction: column;
+
+  border: solid;
+  border-radius: 14px;
+  background-image: linear-gradient(to bottom, orange, white);
 }
 /* 
 prototype for a card
@@ -61,4 +87,27 @@ prototype for a card
   padding: 25px;
   width: 230px;
   background-image: linear-gradient(to bottom, orange, white);
+}
+
+.test {
+  align-self: flex-end;
+}
+
+.card-blue-arrow {
+  width: 70%;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  padding: 8px;
+  background-image: linear-gradient(to bottom, orange, white);
+  border: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  color: black;
 }

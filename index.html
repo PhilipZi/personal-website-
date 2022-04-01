@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <titel>Set your workout</titel>
+    <title>My website</title>
     <meta name="description" content="make your own workout" />
-    <meta name="viewport" content="width:device-widthinitial-scale=1" />
-    <meta name="charset" content="utf-8" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width:device-width,initial-scale=1" />
+    <meta charset="utf-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,100;1,300;1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <h1>Set up your workout</h1>
-      <nav>
-        <a href="#contact">Contact</a>
-        <a href="#biography">Biography</a>
+  <body class="body-class" id="top">
+    <!-- main header -->
+    <header class="header">
+      <h1 class="main-title">Philip Zimmermann</h1>
+      <nav class="navigation">
+        <a class="navigation-link" href="#contact">Contact</a>
+        <a class="navigation-link" href="#biography">Biography</a>
+        <a class="navigation-link" href="#links">Links</a>
       </nav>
     </header>
+    <!-- main conntent -->
     <main>
-      <section>
+      <section class="personal-picture">
         <img
           width="200px"
           cass="selfpictures"
@@ -30,7 +33,8 @@
         />
         <p>This is me on a wedding</p>
       </section>
-      <section>
+      <hr />
+      <section class="interest">
         <h2>These are my interest:</h2>
         <span>Kitesurfing</span>
         <span>gaming</span>
@@ -46,26 +50,33 @@
           </fieldset>
         </form>
       </section>
-      <div>
-        <a class="card" href="https://github.com">
+      <div id="links">
+        <a class="card" href="https://instagram.com/zimmermann.philip">
           <figure class="card-media">
-            <img class="card-image" src="images/github.png" />
+            <img class="card-image" src="images/instagram-icon.png" />
           </figure>
           <div class="card-content">
-            <h2>Github</h2>
-            <p>Follow me on Github</p>
+            <h2>Instagram</h2>
+            <p>Follow me on Instagram</p>
+          </div>
+          <div class="test">
+            <img class="card-blue-arrow" src="images/arrow-right-circle.png" />
           </div>
         </a>
         <a class="card" href="https://github.com">
           <figure class="card-media">
             <img class="card-image" src="images/github.png" />
           </figure>
+
           <div class="card-content">
             <h2>Github</h2>
             <p>Follow me on Github</p>
           </div>
+          <div class="test">
+            <img class="card-blue-arrow" src="images/arrow-right-circle.png" />
+          </div>
         </a>
-        <a class="card" href="https://github.com">
+        <a class="card" href="https://linkedin.com">
           <figure class="card-media">
             <img class="card-image" src="images/linkedin.png" />
           </figure>
@@ -73,12 +84,17 @@
             <h2>Linkedin</h2>
             <p>Follow me on Linkedin</p>
           </div>
+          <div class="test">
+            <img class="card-blue-arrow" src="images/arrow-right-circle.png" />
+          </div>
         </a>
       </div>
       <section id="biography">
         <h2>About me:</h2>
-        <p>sdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf</p>
+        <p>Upcoming web developer</p>
+        <p>Kitesurfer, Snowboarder, Skiier, Climber</p>
       </section>
+      <hr />
       <section>
         <h2>CV</h2>
         <table>
@@ -93,6 +109,8 @@
         </table>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <a class="footer-link" href="#top">top</a>
+    </footer>
   </body>
 </html>
