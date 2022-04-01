@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- head -->
   <head>
     <title>My website</title>
     <meta name="description" content="make your own workout" />
@@ -31,9 +32,9 @@
           cass="selfpictures"
           src="images/IMG_20190127_174208_697.jpeg"
         />
-        <p>This is me on a wedding</p>
+        <p>Hello welcome to my website</p>
       </section>
-      <hr />
+
       <section class="interest">
         <h2>These are my interest:</h2>
         <span>Kitesurfing</span>
@@ -41,17 +42,21 @@
         <span>skiing</span>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="container-contact">
         <form>
-          <fieldset>
-            <legend><b>Contact</b></legend>
+          <div>
+            <h2>Contact</h2>
             <p>Num: 0190/666 666</p>
             <p>Mail: philipzimmermann@hasenfuss.de</p>
-          </fieldset>
+          </div>
         </form>
       </section>
       <div id="links">
-        <a class="card" href="https://instagram.com/zimmermann.philip">
+        <a
+          class="card"
+          target="_blank"
+          href="https://instagram.com/zimmermann.philip"
+        >
           <figure class="card-media">
             <img class="card-image" src="images/instagram-icon.png" />
           </figure>
@@ -63,7 +68,7 @@
             <img class="card-blue-arrow" src="images/arrow-right-circle.png" />
           </div>
         </a>
-        <a class="card" href="https://github.com">
+        <a class="card" target="_blank" href="https://github.com/PhilipZi">
           <figure class="card-media">
             <img class="card-image" src="images/github.png" />
           </figure>
@@ -76,7 +81,7 @@
             <img class="card-blue-arrow" src="images/arrow-right-circle.png" />
           </div>
         </a>
-        <a class="card" href="https://linkedin.com">
+        <a class="card" target="_blank" href="https://linkedin.com">
           <figure class="card-media">
             <img class="card-image" src="images/linkedin.png" />
           </figure>
@@ -89,17 +94,17 @@
           </div>
         </a>
       </div>
-      <section id="biography">
+      <section id="biography" class="container-about-me">
         <h2>About me:</h2>
         <p>Upcoming web developer</p>
       </section>
-      <section id="hobbies">
+      <section id="hobbies" class="container-hobbies">
         <h2>hobbies:</h2>
 
         <p>Kitesurfer, Snowboarder, Skiier, Climber</p>
       </section>
-      <hr />
-      <section>
+
+      <section class="container-cv">
         <h2>CV</h2>
         <table>
           <tr>
@@ -113,6 +118,7 @@
         </table>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="footer">
       <a class="footer-link" href="#top">top</a>
     </footer>
